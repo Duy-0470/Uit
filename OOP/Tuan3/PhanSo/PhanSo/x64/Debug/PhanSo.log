@@ -1,0 +1,9 @@
+﻿  Menu.cpp
+  PhanSo.cpp
+F:\The Squad\Uit\OOP\Tuan3\PhanSo\PhanSo\PhanSo.cpp(10,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+F:\The Squad\Uit\OOP\Tuan3\PhanSo\PhanSo\PhanSo.cpp(16,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+F:\The Squad\Uit\OOP\Tuan3\PhanSo\PhanSo\PhanSo.cpp(17,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+F:\The Squad\Uit\OOP\Tuan3\PhanSo\PhanSo\PhanSo.cpp(68,18): warning C4244: '/=': conversion from 'double' to 'int', possible loss of data
+F:\The Squad\Uit\OOP\Tuan3\PhanSo\PhanSo\PhanSo.cpp(69,18): warning C4244: '/=': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  PhanSo.vcxproj -> F:\The Squad\Uit\OOP\Tuan3\PhanSo\x64\Debug\PhanSo.exe
