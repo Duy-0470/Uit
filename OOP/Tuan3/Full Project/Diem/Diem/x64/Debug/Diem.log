@@ -1,0 +1,4 @@
+﻿  Point.cpp
+  UI.cpp
+  Generating Code...
+F:\VS Studio\Year 1\OOP\Week3\Diem\Diem\Point.cpp(8): error C4716: 'POINT::Set': must return a value
