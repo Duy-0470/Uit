@@ -1,9 +1,0 @@
-﻿  Candidate.cpp
-F:\VS Studio\Year 1\OOP\Week3\ThiSinh\ThiSinh\Candidate.h(7,9): error C3646: 'name': unknown override specifier
-F:\VS Studio\Year 1\OOP\Week3\ThiSinh\ThiSinh\Candidate.h(7,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-F:\VS Studio\Year 1\OOP\Week3\ThiSinh\ThiSinh\Candidate.cpp(10,8): error C2039: 'name': is not a member of 'Candidate'
-F:\VS Studio\Year 1\OOP\Week3\ThiSinh\ThiSinh\Candidate.h(4): message : see declaration of 'Candidate'
-  ThiSinh.cpp
-F:\VS Studio\Year 1\OOP\Week3\ThiSinh\ThiSinh\Candidate.h(7,9): error C3646: 'name': unknown override specifier
-F:\VS Studio\Year 1\OOP\Week3\ThiSinh\ThiSinh\Candidate.h(7,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  Generating Code...
