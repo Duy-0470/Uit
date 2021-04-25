@@ -25,7 +25,7 @@ void String::InputString()
 	}
 	while (strlen(a) > 22)
 	{
-		cout << "Ban da nhap so luong ky tu ma chuong trinh co the su ly (22 ky tu), moi ban nhap lai:" << endl;
+		cout << "Ban da nhap so luong ky tu ma chuong trinh co the xu ly (22 ky tu), moi ban nhap lai:" << endl;
 		cin.getline(a, 99);
 	}
 	
