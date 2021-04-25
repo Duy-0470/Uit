@@ -49,13 +49,8 @@ void String::ReverseString()
 
 void String::ConcatenateStrings(String s)
 {
-	
-	char* v = new char[256];
-	v = s.a;
-	char* g;
-	g=	strcat(a, v);
 	cout << "Hai chuoi sau khi duoc noi la: " << endl;
-	cout << g;
+	cout << strcat(a, s.a);
 }
 
 String::~String()
