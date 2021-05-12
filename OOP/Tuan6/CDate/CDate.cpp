@@ -7,97 +7,69 @@ CDate::CDate() {
 	this->day = this->month = this->year = 1;
 }
 
-CDate::CDate(int day, int month, int year) {
-	this->day = day;
-	this->month = month;
-	this->year = year;
-}
-
-bool CDate::isDate()
+bool CDate::isDate(CDate D)
 {
 	int a[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-	if ((year % 4 == 0 && year % 100 != 0) || (year % 4 != 0 && year % 100 == 0) || year % 400 == 0) a[1] = 29;
-	if (month < 1 || month > 12) return false;
-	if (day < 1 || day > a[month - 1]) return false;
+	if (D.isLeapYear(D)) a[1] = 29;
+	if (D.month < 1 || D.month > 12) return false;
+	if (D.day < 1 || D.day > a[D.month - 1]) return false;
 	return true;
 }
 
-int DayCount(int year) {
-	if ((year % 4 == 0 && year % 100 != 0) || (year % 4 != 0 && year % 100 == 0) || year % 400 == 0)
-		return 366;
-	else return 365;
-}
-
-int CDate::Position() {
-	int total[2][12] = { {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},
-						 {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31} };
-	int i;
-	int s = day;
-
-	if ((year % 4 == 0 && year % 100 != 0) || (year % 4 != 0 && year % 100 == 0) || year % 400 == 0)
-		i = 0;
-	else i = 1;
-	for (int j = 0; j < month - 1; j++)  s += total[i][j];
-
-	return s;
-}
-
-void CDate::Locator(CDate& D, int pos) {
-	int total[2][12] = { {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},
-						 {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31} };
-	int i;
-
+bool CDate::isLeapYear(CDate D) {
 	if ((D.year % 4 == 0 && D.year % 100 != 0) || (D.year % 4 != 0 && D.year % 100 == 0) || D.year % 400 == 0)
+		return true;
+	else return false;
+}
+
+int CDate::NoDayOfMonth(CDate D) {
+	int total[2][12] = { {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},
+						 {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31} };
+	int i;
+
+	if (D.isLeapYear(D))
 		i = 0;
 	else i = 1;
 
-	for (int j = 0; pos >= total[i][j]; j++) {
-		pos -= total[i][j];
-		D.month++;
-	}
-
-	D.day = pos;
+	return total[i][month - 1];
 }
-
 
 CDate operator+(CDate& D, int d) {
-	int dtemp;
+	int d_temp = D.NoDayOfMonth(D);
 	
-	if (d <= (DayCount(D.year) - D.Position())) {
-		dtemp = D.Position() + d;
-		D.Locator(D, dtemp);
-		return D;
+	if (D.day + d > d_temp) {
+		do {
+			d_temp = D.NoDayOfMonth(D);
+			D.month++;
+			if (D.month > 12) {
+				D.month = 1;
+				D.year++;
+			}
+			d = d - (d_temp - D.day);
+			D.day = 0;
+		} while (D.day + d > d_temp);
 	}
-	
-	dtemp = d - (DayCount(D.year) - D.Position());
-
-	while (dtemp > DayCount(D.year)) {
-		dtemp -= DayCount(D.year);
-		D.year++;
-	}
-	D.month = 1;
-	D.Locator(D, dtemp);
+	D.day += d;
 
 	return D;
 }
 
 CDate operator-(CDate& D, int d) {
-	int dtemp;
-
-	if (d <= D.Position()) {
-		dtemp = D.Position() - d;
-		D.Locator(D, dtemp);
-		return D;
-	}
+	int d_temp = D.NoDayOfMonth(D);
 	
-	dtemp = d - D.Position();
-
-	while (dtemp > DayCount(D.year)) {
-		dtemp -= DayCount(D.year);
-		D.year--;
+	if (D.day <= d) {
+		do {
+			D.month--;
+			if (D.month == 0) {
+				D.month = 12;
+				D.year--;
+			}
+			d_temp = D.NoDayOfMonth(D);
+			d -= D.day;
+			D.day = D.NoDayOfMonth(D);
+		} while (D.day < d);
 	}
-	D.month = 1;
-	D.Locator(D, dtemp);
+	D.day -= d;
 
 	return D;
 }
@@ -134,7 +106,7 @@ CDate operator++(CDate& D) {
 	case 28:
 		switch (D.month) {
 		case 2:
-			if ((D.year % 4 == 0 && D.year % 100 != 0) || (D.year % 4 != 0 && D.year % 100 == 0) || D.year % 400 == 0)
+			if (D.isLeapYear(D))
 				D.day++;
 			else {
 				D.day = 1;
@@ -191,7 +163,7 @@ CDate operator--(CDate& D) {
 			D.day += 30;
 			break;
 		case 2:
-			if ((D.year % 4 == 0 && D.year % 100 != 0) || (D.year % 4 != 0 && D.year % 100 == 0) || D.year % 400 == 0) {
+			if (D.isLeapYear(D)) {
 				D.month--;
 				D.day += 29;
 				break;
@@ -208,23 +180,15 @@ CDate operator--(CDate& D) {
 	return D;
 }
 
-int operator-(CDate D1, CDate D2) {
-	int d1 = D1.Position();
-	int d2 = D2.Position();
-
-	if (D1.year == D2.year) return abs(d2 - d1);
-
-	int s = 0;
-	if (D1.year < D2.year) {
-		d1 = DayCount(D1.year) - d1;
-		for (int i = D1.year + 1; i < D2.year; i++) s += DayCount(i);
-		return d1 + s + d2;
+int CDate::DatePosition(CDate D) {
+	if (D.month < 3) {
+		D.year--;
+		D.month += 12;
 	}
-	else {
-		d2 = DayCount(D2.year) - d2;
-		for (int i = D2.year + 1; i < D1.year; i++) s += DayCount(i);
-		return d1 + s + d2;
-	}
+	return 365 * D.year + D.year / 4 - D.year / 100 + D.year / 400 + (153 * D.month - 457) / 5 + D.day - 306;
+}
+int operator-(CDate d_temp, CDate D2) {
+	return abs(d_temp.DatePosition(d_temp) - D2.DatePosition(D2));
 }
 
 istream& operator>>(istream& is, CDate& D)
@@ -233,8 +197,8 @@ istream& operator>>(istream& is, CDate& D)
 		cout << "\nNgay: "; is >> D.day;
 		cout << "Thang: "; is >> D.month;
 		cout << "Nam: "; is >> D.year;
-		if (D.isDate() == false) cout << "\nNgay khong hop le. Moi ban nhap lai.\n";
-	} while (D.isDate() == false);
+		if (!D.isDate(D)) cout << "\nNgay khong hop le. Moi ban nhap lai.\n";
+	} while (!D.isDate(D));
 	return is;
 }
 

@@ -78,11 +78,11 @@ int main()
                 switch (d) {
                 case 1:
                     cout << "\nNhap so ngay can giam: "; cin >> a;
-                    cout << D1 << " - " << a << " ngay = " << D1 - a << "\n";
+                    cout << "\nNgay 1 moi: " << D2 - a << "\n";
                     break;
                 case 2:
                     cout << "\nNhap so ngay can giam: "; cin >> a;
-                    cout << D2 << " - " << a << " ngay = " << D2 - a << "\n";
+                    cout << "\nNgay 1 moi: " << D2 - a << "\n";
                     break;
                 case 0:
                     break;

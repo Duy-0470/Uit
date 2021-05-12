@@ -10,10 +10,10 @@ private:
 
 public:
 	CDate();
-	CDate(int, int, int);
-	int Position();
-	void Locator(CDate&, int);
-	bool isDate();
+	int DatePosition(CDate);
+	int NoDayOfMonth(CDate);
+	bool isDate(CDate);
+	bool isLeapYear(CDate);
 	friend CDate operator+(CDate&, int);
 	friend CDate operator-(CDate&, int);
 	friend int operator-(CDate, CDate);
