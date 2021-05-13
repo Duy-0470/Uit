@@ -17,10 +17,12 @@ int main()
     {
         out << vb.DemSoTu()[i] << endl;
     }
-    for (int i = 0; i < vb.TimTuXuatHienNhieuNhat().size(); i++)
+    vb.TimTuXuatHienNhieuNhat();
+    for (int i = 0; i < vb.mostAppears.size(); i++)
     {
-        out << vb.TimTuXuatHienNhieuNhat()[i] << " ";
+        out << vb.mostAppears[i] << " ";
     }
+    out << endl;
     vb.Sort();
     for (int i = 0; i < vb.Get().size(); i++)
     {
