@@ -47,7 +47,7 @@ vector<int> VanBan::DemSoTu()
     return temp;
 }
 
-vector<string> VanBan::TimTuXuatHienNhieuNhat()
+void VanBan::TimTuXuatHienNhieuNhat()
 {
     vector<string> vec;
     for (int i = 0; i < tu.size(); i++)
@@ -82,7 +82,10 @@ vector<string> VanBan::TimTuXuatHienNhieuNhat()
     {
         if (mostAppear < soLuong[i]) mostAppear = soLuong[i];
     }
-    return khacNhau;
+    for (int i = 0; i < khacNhau.size(); i++)
+    {
+        if (soLuong[i] == mostAppear) mostAppears.push_back(khacNhau[i]);
+    }
 }
 
 void VanBan::Sort()
