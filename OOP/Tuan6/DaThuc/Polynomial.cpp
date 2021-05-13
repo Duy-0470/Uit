@@ -59,7 +59,6 @@ Polynomial operator-(Polynomial P1, Polynomial P2) {
 	int temp = abs(P1.deg - P2.deg);
 
 	if (P1.deg > P2.deg) {
-		P2.coef.resize(P1.coef.size());
 		temp_adder.coef.resize(P1.coef.size());
 		for (int i = 0; i < P2.deg; i++) {
 			int a = i + temp;
@@ -68,7 +67,6 @@ Polynomial operator-(Polynomial P1, Polynomial P2) {
 		Res.deg = P1.coef.size();
 	}
 	else {
-		P1.coef.resize(P2.coef.size());
 		temp_adder.coef.resize(P2.coef.size());
 		for (int i = 0; i < P1.deg; i++) {
 			int a = i + temp;
@@ -76,7 +74,7 @@ Polynomial operator-(Polynomial P1, Polynomial P2) {
 		}
 		Res.deg = P2.coef.size();
 	}
-	Res.coef.resize(Res.deg);
+	Res.coef.resize(P1.coef.size());
 
 	if (P1.deg > P2.deg) {
 		for (int i = 0; i < Res.coef.size(); i++) {
@@ -109,7 +107,6 @@ Polynomial operator*(Polynomial P1, Polynomial P2) {
 
 
 Polynomial operator/(Polynomial P1, Polynomial P2) {
-
 	Polynomial divisor, dividend, quotient, remainder;
 	if (P1.deg < P2.deg) {
 		quotient.coef.resize(1);
@@ -117,12 +114,13 @@ Polynomial operator/(Polynomial P1, Polynomial P2) {
 	}
 
 	divisor = P1; dividend = P2;
-	quotient.deg = P1.deg - P2.deg + 1;
-	quotient.coef.resize(quotient.deg);
-
+	int s = P1.deg - P2.deg + 1;
+	quotient.deg = s;
+	quotient.coef.resize(s);
 	int i = 0;
-	while (i < quotient.coef.size()) {
-		quotient.coef[i] = divisor.coef[i] / dividend.coef[0];
+
+	while (i < P1.deg - P2.deg + 1) {
+		quotient.coef[i] = (divisor.coef[i] / dividend.coef[0]);
 		remainder = quotient * dividend;
 		divisor = divisor - remainder;
 		i++;
@@ -160,13 +158,11 @@ istream& operator>>(istream& is, Polynomial& P) {
 }
 
 ostream& operator<<(ostream& os, Polynomial P) {
-	for (int i = 0; i < P.coef.size() - 1; i++) {
-		if (P.coef[i] == 0) continue;
-		else {
+	for (int i = 0; i < P.coef.size(); i++) {
+		if (P.coef[i] != 0) {
 			os << (P.coef[i] > 0 ? " + " : " - ") << abs(P.coef[i]) << "x^" << P.deg - i - 1;
 		}
 	}
-	os << (P.coef[P.coef.size() - 1] != 0 ? (P.coef[P.coef.size() - 1] > 0 ? " + " : " - ") : "")  << abs(P.coef[P.coef.size() - 1]);
 
 	return os;
 }
