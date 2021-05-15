@@ -13,7 +13,7 @@ public:
 	CVector operator+ (const CVector &v);
 	CVector operator- (const CVector &v);
 	CVector operator* (const CVector& v);
-	CVector operator* (const int n); //Lười quá chưa xây được :)))))))
+	CVector operator* (const int n); //Lười quá chưa xây được :))))))) "bruh" - Ecsta
 	friend ostream& operator<< (ostream& os, const CVector v);
 	friend istream& operator>> (istream& os, CVector& v);
 
