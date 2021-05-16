@@ -11,6 +11,7 @@ private:
 
 public:
 	DIEM();
+	DIEM(double, double);
 	double GetX();
 	double GetY();
 	void SetXY(double, double);

@@ -7,6 +7,11 @@ DIEM::DIEM() {
 	this->x = this->y = 0;
 }
 
+DIEM::DIEM(double x, double y) {
+	this->x = x;
+	this->y = y;
+}
+
 double DIEM::GetX() {
 	return x;
 }
