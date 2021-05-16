@@ -43,18 +43,10 @@ DIEM HCN::GetB() {
 
 void HCN::SetA(DIEM AA) {
 	A = AA;
-	do {
-		cin >> A;
-		isRectangle();
-	} while (!isRectangle());
 }
 
 void HCN::SetB(DIEM BB) {
 	B = BB;
-	do {
-		cin >> B;
-		isRectangle();
-	} while (!isRectangle());
 }
 
 double HCN::Perimeter() {

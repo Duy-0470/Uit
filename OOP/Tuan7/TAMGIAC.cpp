@@ -35,27 +35,15 @@ int TAMGIAC::getCount() {
 
 void TAMGIAC::SetA(DIEM AA) {
 	A = AA;
-	do {
-		cin >> A;
-		isTriangle();
-	} while (!isTriangle());
 }
 
 void TAMGIAC::SetB(DIEM BB) {
 	B = BB;
-	do {
-		cin >> B;
-		isTriangle();
-	} while (!isTriangle());
 }
 
 void TAMGIAC::SetC(DIEM CC)
 {
 	C = CC;
-	do {
-		cin >> C;
-		isTriangle();
-	} while (!isTriangle());
 }
 
 DIEM TAMGIAC::GetA() {
