@@ -25,7 +25,7 @@ void String::InputString()
 	}
 	while (strlen(a) > 22)
 	{
-		cout << "Ban da nhap so luong ky tu ma chuong trinh co the xu ly (22 ky tu), moi ban nhap lai:" << endl;
+		cout << "Ban da nhap qua so luong ky tu ma chuong trinh co the xu ly (22 ky tu), moi ban nhap lai:" << endl;
 		cin.getline(a, 99);
 	}
 	
@@ -40,7 +40,7 @@ void String::OutputString()
 }
 void String::LengthOfString()
 {
-	cout << "Chuoi so co do dai la: "<<strlen(a)<<endl;
+	cout << "Chuoi co do dai la: "<<strlen(a)<<endl;
 }
 void String::ReverseString()
 {
