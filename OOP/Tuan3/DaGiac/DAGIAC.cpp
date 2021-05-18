@@ -38,10 +38,8 @@ void DAGIAC::Rotate(double angle) {
 	for (int i = 0; i < this->NumberOfPeak; i++) {
 		double x = this->peak[i].GetX();
 		double y = this->peak[i].GetY();
-		for (int i = 0; i < this->NumberOfPeak; i++) {
-			this->peak[i].SetX(x * cos(angle) - y * sin(angle));
-			this->peak[i].SetY(x * sin(angle) + y * cos(angle));
-		}
+		this->peak[i].SetX(x * cos(angle) - y * sin(angle));
+		this->peak[i].SetY(x * sin(angle) + y * cos(angle));
 	}
 }
 
