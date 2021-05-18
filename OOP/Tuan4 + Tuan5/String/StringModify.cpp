@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include"StringModify.h"
+
 //Constructor
 String::String(char *b)
 {
@@ -7,6 +8,7 @@ String::String(char *b)
 	a = new char[size +1];
 	strcpy(a, b);
 }
+
 //Copy Constructor
 String::String(const String& obj)
 {
@@ -28,11 +30,10 @@ void String::InputString()
 		cout << "Ban da nhap qua so luong ky tu ma chuong trinh co the xu ly (22 ky tu), moi ban nhap lai:" << endl;
 		cin.getline(a, 99);
 	}
-	
 }
+
 void String::OutputString()
 {
-	
 	cout << "Chuoi cua ban la: " << endl;
 	for (int i = 0; i<strlen(a); i++)
 		cout << a[i];
@@ -55,7 +56,6 @@ void String::ConcatenateStrings(String s)
 
 String::~String()
 {
-	
 	delete[] a;
 	a = NULL;
 	size = 0;
