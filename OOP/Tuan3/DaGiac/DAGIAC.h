@@ -4,7 +4,7 @@
 using namespace std;
 class DAGIAC {
 private:
-	DIEM* peak;
+	DIEM* peak; // vertex, not peak :3 - Ecsta
 	int NumberOfPeak;
 public:
 	DAGIAC();
