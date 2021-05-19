@@ -11,7 +11,7 @@ String::String(char *b)
 void String::InputString()
 {
 	a = new char[256] ;
-	int i = 0;
+	
 	{
 		cout << "Hay nhap chuoi cua ban: " << endl;
 		cin.getline(a,99);
