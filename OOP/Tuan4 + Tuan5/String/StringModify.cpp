@@ -43,7 +43,6 @@ void String::ConcatenateStrings(String &s)
 
 String::~String()
 {
-	
 	delete[] a;
 	a = NULL;
 	size = 0;
