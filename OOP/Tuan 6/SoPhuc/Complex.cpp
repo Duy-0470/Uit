@@ -38,7 +38,10 @@ istream& operator>>(istream& is, Complex& C) {
 }
 
 ostream& operator<<(ostream& os, Complex C) {
-	if (C.real != 0) os << C.real;
-	if (C.img != 0) os << (C.img > 0 ? " + " : " - ") << abs(C.img) << "i";
+	if (C.real == 0 && C.img == 0) cout << 0;
+	else {
+		if (C.real != 0) os << C.real;
+		if (C.img != 0) os << (C.img > 0 ? " + " : " - ") << abs(C.img) << "i";
+	}
 	return os;
 }
