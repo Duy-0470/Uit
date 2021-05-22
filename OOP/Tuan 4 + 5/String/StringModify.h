@@ -10,12 +10,11 @@ private:
 	int size;
 public:
 	String(char *);
-	String(const String&);
 	~String();
 	void InputString();
 	void OutputString();
 	void LengthOfString();
 	void ReverseString();
-	void ConcatenateStrings(String);
+	void ConcatenateStrings(String&);
 };
 #endif
