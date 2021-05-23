@@ -8,51 +8,56 @@ CVector::CVector() {
 	this->dimension = 0;
 }
 
-CVector::CVector(int n) {
-	this->vt = new double[n];
-	dimension = n;
-	for (int i = 0; i < n; i++) {
-		vt[i] = 0;
-	}
-}
-
 CVector::~CVector() {
 }
 
-CVector CVector::operator+ (const CVector& v) {
+CVector operator+ (const CVector v1, const CVector v2) {
 
 	CVector temp;
-	if (this->dimension != v.dimension) {
+	if (v1.dimension != v2.dimension) {
 		return temp;
 	}
-	temp = *this;
-	for (int i = 0; i < this->dimension; i++) {
-		temp.vt[i] += v.vt[i];
+	temp.vt = new double[v1.dimension];
+	temp.dimension = v1.dimension;
+	for (int i = 0; i < temp.dimension; i++) {
+		temp.vt[i] = v1.vt[i] + v2.vt[i];
 	}
 	return temp;
 }
 
-CVector CVector::operator- (const CVector& v) {
+CVector operator- (const CVector v1, const CVector v2){
 	CVector temp;
-	if (this->dimension != v.dimension) {
+	if (v1.dimension != v2.dimension) {
 		return temp;
 	}
-	temp = *this;
-	for (int i = 0; i < this->dimension; i++) {
-		temp.vt[i] -= v.vt[i];
+	temp.vt = new double[v1.dimension];
+	temp.dimension = v1.dimension;
+	for (int i = 0; i < temp.dimension; i++) {
+		temp.vt[i] = v1.vt[i] - v2.vt[i];
 	}
 	return temp;
 }
 
 
-CVector CVector::operator* (const CVector& v) {
+CVector operator* (const CVector v1, const CVector v2) {
 	CVector temp;
-	if (this->dimension != v.dimension) {
+	if (v1.dimension != v2.dimension) {
 		return temp;
 	}
-	temp = *this;
-	for (int i = 0; i < this->dimension; i++) {
-		this->vt[i] *= v.vt[i];
+	temp.vt = new double[v1.dimension];
+	temp.dimension = v1.dimension;
+	for (int i = 0; i < temp.dimension; i++) {
+		temp.vt[i] = v1.vt[i] * v2.vt[i];
+	}
+	return temp;
+}
+
+CVector operator* (const int n, const CVector v) {
+	CVector temp;
+	temp.vt = new double[v.dimension];
+	temp.dimension = v.dimension;
+	for (int i = 0; i < temp.dimension; i++) {
+		temp.vt[i] = v.vt[i] * n;
 	}
 	return temp;
 }
