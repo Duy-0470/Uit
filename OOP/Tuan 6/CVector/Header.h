@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <iostream> 
 
 using namespace std;
@@ -8,13 +8,11 @@ public:
 	double *vt;
 	int dimension;
 	CVector();
-	CVector(int n);
 	~CVector();
-	CVector operator+ (const CVector &v);
-	CVector operator- (const CVector &v);
-	CVector operator* (const CVector& v);
-	CVector operator* (const int n); //Lười quá chưa xây được :))))))) "bruh" - Ecsta
+	friend CVector operator+ (const CVector, const CVector);
+	friend CVector operator- (const CVector, const CVector);
+	friend CVector operator* (const CVector, const CVector);
+	friend CVector operator* (const int, const CVector);
 	friend ostream& operator<< (ostream& os, const CVector v);
 	friend istream& operator>> (istream& os, CVector& v);
-
 };
