@@ -65,7 +65,7 @@ void MaTran::display() {
 
 bool MaTran::isPrime(int n) {
 	if (n <= 1) return false;
-	for (int i = 2; i <= sqrt(n); i++) {
+	for (int i = 2; i <= n / 2; i++) {
 		if (n % i == 0) return false;
 	}
 	return true;
@@ -73,7 +73,8 @@ bool MaTran::isPrime(int n) {
 
 void MaTran::displayPrime() {
 	int count = 0, max;
-	vector<int> a, b;
+	vector<int> a;
+	int* b;
 
 	for (int i = 0; i < sd; i++) {
 		for (int j = 0; j < sc; j++) {
@@ -84,13 +85,17 @@ void MaTran::displayPrime() {
 		}
 	}
 
-	if (count == 0) cout << "khong co.";
+	if (count == 0) cout << "\nKhong co phan tu nao la so nguyen to.";
 	else {
+		cout << "\nCac phan tu la so nguyen to: ";
 		max = a[0];
 		for (int i = 0; i < a.size(); i++) {
 			if (max < a[i]) max = a[i];
 		}
-		b.resize(max + 1);
+		b = new int[max + 1];
+		for (int i = 0; i <= max; i++) {
+			b[i] = 0;
+		}
 		for (int i = 0; i < a.size(); i++) {
 			if (b[a[i]] == 0) {
 				cout << a[i] << " ";

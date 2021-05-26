@@ -10,7 +10,7 @@ int main()
 	M.input();
 	cout << "\nMa tran vua nhap:\n";
 	M.display();
-	cout << "\nCac phan tu la so nguyen to: "; M.displayPrime();
+	M.displayPrime();
 	cout << "\nSo luong so chinh phuong: " << M.squareCount() << "\n";
 	
 	do {
