@@ -132,15 +132,31 @@ double Mang1C::symmetricNumberAverage(){
 }
 
 void Mang1C::removeAt(int pos) {
+	if (pos > n) {
+		cout << "\nVi tri nam ngoai gioi han mang.\n";
+		return;
+	}
+
 	pos--;
 	for (int i = pos; i < n; i++) {
 		a[i] = a[i + 1];
 	}
 	a[n - 1] = NULL;
 	n--;
+
+	if (n == 0) cout << "\nMang khong con phan tu.\n";
+	else {
+		cout << "\nMang sau khi da xoa: ";
+		display();
+	}
 }
 
 void Mang1C::addAt(Mang1C& M1, int t, int pos) {
+	if (pos > n) {
+		cout << "\nVi tri nam ngoai gioi han mang.\n";
+		return;
+	}
+
 	Mang1C M2(M1.n + 1);
 	pos--;
 	for (int i = 0; i < pos; i++) {
@@ -150,7 +166,8 @@ void Mang1C::addAt(Mang1C& M1, int t, int pos) {
 	for (int i = pos + 1; i < M2.n; i++) {
 		M2.a[i] = M1.a[i - 1];
 	}
-	M2.display();
+
+	cout << "\nMang sau khi da them: "; M2.display();
 }
 
 void Mang1C::find(int t) {

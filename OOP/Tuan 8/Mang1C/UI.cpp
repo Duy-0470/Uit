@@ -40,19 +40,20 @@ int main()
 		switch (n) {
 		case 1:
 			cout << "\nChon vi tri xoa phan tu: "; cin >> p;
-			cout << "\nMang sau khi da xoa: ";
 			A.removeAt(p);
 			A.display();
+			cout << "\n";
 			break;
 		case 2:
 			cout << "\nChon vi tri them phan tu: "; cin >> t;
 			cout << "Gia tri can duoc them: "; cin >> p;
-			cout << "\nMang sau khi da them: ";
 			A.addAt(A, p, t);
+			cout << "\n";
 			break;
 		case 3:
 			cout << "\nNhap gia tri phan tu can tim: "; cin >> t;
 			A.find(t);
+			cout << "\n";
 			break;
 		case 0:
 			return 0;
