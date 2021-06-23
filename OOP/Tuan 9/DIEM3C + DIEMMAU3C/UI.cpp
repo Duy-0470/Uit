@@ -20,8 +20,8 @@ int main()
 		if (B.isDuplicate(C)) cout << "\nB va C trung nhau.";
 		cout << "\nNhap so tuong ung voi yeu cau cua ban:";
 		cout << "\n1: Chinh sua toa do dinh";
-		cout << "\n2: Xuat thong tin dinh";
-		cout << "\n2: Di chuyen tam giac";
+		cout << "\n2: Xuat thong tin dinh"; // Chưa có phần này ở dưới
+		cout << "\n2: Di chuyen tam giac"; // Bị trùng số thứ tự với lựa chọn trên
 		cout << "\n3: Tim diem doi xung";
 		cout << "\n4: Chu vi tam giac";
 		cout << "\n5: Dien tich tam giac";
