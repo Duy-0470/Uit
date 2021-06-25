@@ -1,0 +1,34 @@
+Ten sach: Diep Van
+Ma: 1
+The loai: Kiem hiep
+Tac gia: Diep Luu
+Nam xuat ban: 1945
+Diem xep hang: 4
+
+Ten sach: Diep Van
+Ma: 2
+The loai: Kiem hiep
+Tac gia: Diep Luu
+Nam xuat ban: 1945
+Diem xep hang: 4
+
+Ten sach: Diep Van
+Ma: 3
+The loai: Kiem hiep
+Tac gia: Diep Luu
+Nam xuat ban: 1945
+Diem xep hang: 4
+
+Ten sach: Ly Tieu Long
+Ma: 4
+The loai: Vo cong
+Tac gia: Diep ki
+Nam xuat ban: 1995
+Diem xep hang: 4
+
+Ten sach: Ly Tieu Long
+Ma: 5
+The loai: Vo cong
+Tac gia: Diep ki
+Nam xuat ban: 1995
+Diem xep hang: 4
