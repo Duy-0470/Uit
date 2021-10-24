@@ -23,11 +23,6 @@ namespace Bai07
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
         private void button_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -43,76 +38,6 @@ namespace Bai07
             {
                 MessageBox.Show("The seat is occupied!", "Inform");
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            button_Click(sender, e);
         }
 
         private void Form1_Load(object sender, EventArgs e)
