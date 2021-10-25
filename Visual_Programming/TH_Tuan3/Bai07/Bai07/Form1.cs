@@ -29,10 +29,48 @@ namespace Bai07
             if (btn.BackColor == Color.White)
             {
                 btn.BackColor = Color.Blue;
+                for (int i = 0; i < list_btn.Count; i++)
+                {
+                    if (list_btn[i].Name == btn.Name)
+                    {
+                        if (i < 5)
+                        {
+                            Fee += 5000;
+                        }
+                        else if (i < 10)
+                        {
+                            Fee += 6500;
+                        }
+                        else
+                        {
+                            Fee += 8000;
+                        }
+                    }
+                }
+                tb_Total.Text = Fee.ToString();
             }
             else if (btn.BackColor == Color.Blue)
             {
                 btn.BackColor = Color.White;
+                for (int i = 0; i < list_btn.Count; i++)
+                {
+                    if (list_btn[i].Name == btn.Name)
+                    {
+                        if (i < 5)
+                        {
+                            Fee -= 5000;
+                        }
+                        else if (i < 10)
+                        {
+                            Fee -= 6500;
+                        }
+                        else
+                        {
+                            Fee -= 8000;
+                        }
+                    }
+                }
+                tb_Total.Text = Fee.ToString();
             }
             else if (btn.BackColor == Color.Yellow)
             {
@@ -58,6 +96,7 @@ namespace Bai07
             list_btn.Add(button13);
             list_btn.Add(button14);
             list_btn.Add(button15);
+            tb_Total.Text = "0";
         }
 
         private void btn_Buy_Click(object sender, EventArgs e)
@@ -66,22 +105,10 @@ namespace Bai07
             {
                 if (list_btn[i].BackColor == Color.Blue)
                 {
-                    if (i < 5)
-                    {
-                        Fee += 5000;
-                    }
-                    else if (i < 10)
-                    {
-                        Fee += 6500;
-                    }
-                    else
-                    {
-                        Fee += 8000;
-                    }
                     list_btn[i].BackColor = Color.Yellow;
                 }
             }
-            tb_Total.Text = Fee.ToString();
+            tb_Total.Text = "0";
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
