@@ -8,3 +8,13 @@ F:\Hoc_Ki_3\Lap_Trinh_Truc_Quan\TH\TH3\Bai03\Bai03\obj\Debug\Bai03.csproj.Genera
 F:\Hoc_Ki_3\Lap_Trinh_Truc_Quan\TH\TH3\Bai03\Bai03\obj\Debug\Bai03.csproj.CoreCompileInputs.cache
 F:\Hoc_Ki_3\Lap_Trinh_Truc_Quan\TH\TH3\Bai03\Bai03\obj\Debug\Bai03.exe
 F:\Hoc_Ki_3\Lap_Trinh_Truc_Quan\TH\TH3\Bai03\Bai03\obj\Debug\Bai03.pdb
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\bin\Debug\Bai03.exe.config
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\bin\Debug\Bai03.exe
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\bin\Debug\Bai03.pdb
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\obj\Debug\Bai03.csproj.AssemblyReference.cache
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\obj\Debug\Bai03.Form1.resources
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\obj\Debug\Bai03.Properties.Resources.resources
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\obj\Debug\Bai03.csproj.GenerateResource.cache
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\obj\Debug\Bai03.csproj.CoreCompileInputs.cache
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\obj\Debug\Bai03.exe
+E:\GIT\The Squad\Uit\Visual_Programming\TH_Tuan3\Bai03\Bai03\obj\Debug\Bai03.pdb
