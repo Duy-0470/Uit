@@ -96,11 +96,15 @@ namespace Bai09
             textBox_ID.Clear();
             textBox_Name.Clear();
             comboBox_Profession.SelectedIndex = -1;
-            listView_SelectedSubjects.Clear();
+            listView_SelectedSubjects.Items.Clear();
+            checkBox_Male.Checked = checkBox_Female.Checked = false;
+            textBox_ID.Focus();
         }
 
         private void button_Cancel_Click(object sender, EventArgs e)
         {
+            if (listView_SelectedSubjects.Items.Count == 0) return;
+
             for (int i = 0; i < listView_SelectedSubjects.Items.Count; i++)
             {
                 listView_SelectedSubjects.Items[i].Selected = true;
@@ -114,98 +118,87 @@ namespace Bai09
                     i--;
                 }
             }
-            listView_Subjects.Sorting = SortOrder.Ascending;
         }
 
         private void comboBox_Profession_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (comboBox_Profession.SelectedIndex)
             {
-                case 0:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                case 0:   
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < IT.Length; i++)
                     {    
                         listView_Subjects.Items.Add(IT[i]);
                     }
                     break;
                 case 1:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < InSy.Length; i++)
                     {                        
                         listView_Subjects.Items.Add(InSy[i]);
                     }
                     break;
                 case 2:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < CS.Length; i++)
                     {
                         listView_Subjects.Items.Add(CS[i]);
                     }
                     break;
                 case 3:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < SE.Length; i++)
                     {
                         listView_Subjects.Items.Add(SE[i]);
                     }
                     break;
                 case 4:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < CE.Length; i++)
                     {
                         listView_Subjects.Items.Add(CE[i]);
                     }
                     break;
                 case 5:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < CNaDS.Length; i++)
                     {
                         listView_Subjects.Items.Add(CNaDS[i]);
                     }
                     break;
                 case 6:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < CNaDT.Length; i++)
                     {
                         listView_Subjects.Items.Add(CNaDT[i]);
                     }
                     break;
                 case 7:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < InSe.Length; i++)
                     {
                         listView_Subjects.Items.Add(InSe[i]);
                     }
                     break;                     
                 case 8:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < EC.Length; i++)
                     {
                         listView_Subjects.Items.Add(EC[i]);
                     }
                     break;
                 case 9:
-                    listView_Subjects.Clear();
-                    listView_SelectedSubjects.Clear();
-                    listView_Subjects.Columns.Add("", 330);
+                    listView_Subjects.Items.Clear();
+                    listView_SelectedSubjects.Items.Clear();
                     for (int i = 0; i < DaSc.Length; i++)
                     {
                         listView_Subjects.Items.Add(DaSc[i]);
@@ -219,16 +212,12 @@ namespace Bai09
 
         private void button_Select_Click(object sender, EventArgs e)
         {
-            if (listView_SelectedSubjects.Items.Count == 0) listView_SelectedSubjects.Columns.Add("", 300);
-
             for (int i = 0; i < listView_Subjects.Items.Count; i++)
             {
                 if (listView_Subjects.Items[i].Selected)
                 {
                     listView_SelectedSubjects.Items.Add(listView_Subjects.Items[i].Text);
                     listView_Subjects.Items[i].Remove();
-                    listView_Subjects.Sorting = SortOrder.Ascending;
-                    listView_SelectedSubjects.Sorting = SortOrder.Ascending;
                     i--;
                 }
             }
@@ -236,16 +225,12 @@ namespace Bai09
 
         private void button_Unselect_Click(object sender, EventArgs e)
         {
-            if (listView_Subjects.Items.Count == 0) listView_Subjects.Columns.Add("", 300);
-            
             for (int i = 0; i < listView_SelectedSubjects.Items.Count; i++)
             {
                 if (listView_SelectedSubjects.Items[i].Selected)
                 {
                     listView_Subjects.Items.Add(listView_SelectedSubjects.Items[i].Text);
                     listView_SelectedSubjects.Items[i].Remove();
-                    listView_Subjects.Sorting = SortOrder.Ascending;
-                    listView_SelectedSubjects.Sorting = SortOrder.Ascending;
                     i--;
                 }
             }

@@ -35,7 +35,9 @@ namespace Bai09
             this.button_Unselect = new System.Windows.Forms.Button();
             this.button_Select = new System.Windows.Forms.Button();
             this.listView_SelectedSubjects = new System.Windows.Forms.ListView();
+            this.columnHeader_SelectedSubjects = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView_Subjects = new System.Windows.Forms.ListView();
+            this.columnHeader_Subjects = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label_Subjects = new System.Windows.Forms.Label();
             this.checkBox_Female = new System.Windows.Forms.CheckBox();
             this.checkBox_Male = new System.Windows.Forms.CheckBox();
@@ -83,7 +85,7 @@ namespace Bai09
             // 
             // button_Cancel
             // 
-            this.button_Cancel.Location = new System.Drawing.Point(384, 333);
+            this.button_Cancel.Location = new System.Drawing.Point(388, 333);
             this.button_Cancel.Name = "button_Cancel";
             this.button_Cancel.Size = new System.Drawing.Size(93, 23);
             this.button_Cancel.TabIndex = 16;
@@ -93,7 +95,7 @@ namespace Bai09
             // 
             // button_Save
             // 
-            this.button_Save.Location = new System.Drawing.Point(293, 333);
+            this.button_Save.Location = new System.Drawing.Point(288, 333);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(85, 23);
             this.button_Save.TabIndex = 15;
@@ -103,7 +105,7 @@ namespace Bai09
             // 
             // button_Unselect
             // 
-            this.button_Unselect.Location = new System.Drawing.Point(363, 259);
+            this.button_Unselect.Location = new System.Drawing.Point(360, 257);
             this.button_Unselect.Name = "button_Unselect";
             this.button_Unselect.Size = new System.Drawing.Size(40, 23);
             this.button_Unselect.TabIndex = 14;
@@ -113,7 +115,7 @@ namespace Bai09
             // 
             // button_Select
             // 
-            this.button_Select.Location = new System.Drawing.Point(363, 230);
+            this.button_Select.Location = new System.Drawing.Point(360, 228);
             this.button_Select.Name = "button_Select";
             this.button_Select.Size = new System.Drawing.Size(40, 23);
             this.button_Select.TabIndex = 13;
@@ -123,18 +125,28 @@ namespace Bai09
             // 
             // listView_SelectedSubjects
             // 
+            this.listView_SelectedSubjects.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader_SelectedSubjects});
             this.listView_SelectedSubjects.Cursor = System.Windows.Forms.Cursors.Hand;
             this.listView_SelectedSubjects.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.listView_SelectedSubjects.HideSelection = false;
-            this.listView_SelectedSubjects.Location = new System.Drawing.Point(429, 180);
+            this.listView_SelectedSubjects.Location = new System.Drawing.Point(418, 180);
             this.listView_SelectedSubjects.Name = "listView_SelectedSubjects";
-            this.listView_SelectedSubjects.Size = new System.Drawing.Size(319, 147);
+            this.listView_SelectedSubjects.Size = new System.Drawing.Size(330, 147);
+            this.listView_SelectedSubjects.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView_SelectedSubjects.TabIndex = 12;
             this.listView_SelectedSubjects.UseCompatibleStateImageBehavior = false;
             this.listView_SelectedSubjects.View = System.Windows.Forms.View.Details;
             // 
+            // columnHeader_SelectedSubjects
+            // 
+            this.columnHeader_SelectedSubjects.Text = "";
+            this.columnHeader_SelectedSubjects.Width = 330;
+            // 
             // listView_Subjects
             // 
+            this.listView_Subjects.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader_Subjects});
             this.listView_Subjects.Cursor = System.Windows.Forms.Cursors.Hand;
             this.listView_Subjects.FullRowSelect = true;
             this.listView_Subjects.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
@@ -142,9 +154,15 @@ namespace Bai09
             this.listView_Subjects.Location = new System.Drawing.Point(6, 180);
             this.listView_Subjects.Name = "listView_Subjects";
             this.listView_Subjects.Size = new System.Drawing.Size(330, 147);
+            this.listView_Subjects.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView_Subjects.TabIndex = 11;
             this.listView_Subjects.UseCompatibleStateImageBehavior = false;
             this.listView_Subjects.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader_Subjects
+            // 
+            this.columnHeader_Subjects.Text = "";
+            this.columnHeader_Subjects.Width = 330;
             // 
             // label_Subjects
             // 
@@ -298,6 +316,7 @@ namespace Bai09
             // 
             // Form_StudentInfo
             // 
+            this.AcceptButton = this.button_Save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 645);
@@ -320,7 +339,6 @@ namespace Bai09
         private System.Windows.Forms.GroupBox groupBox_StudentInfo;
         private System.Windows.Forms.Button button_Unselect;
         private System.Windows.Forms.Button button_Select;
-        private System.Windows.Forms.ListView listView_SelectedSubjects;
         private System.Windows.Forms.ListView listView_Subjects;
         private System.Windows.Forms.Label label_Subjects;
         private System.Windows.Forms.CheckBox checkBox_Female;
@@ -340,6 +358,9 @@ namespace Bai09
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Profession;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_Subjects;
+        private System.Windows.Forms.ColumnHeader columnHeader_Subjects;
+        private System.Windows.Forms.ListView listView_SelectedSubjects;
+        private System.Windows.Forms.ColumnHeader columnHeader_SelectedSubjects;
     }
 }
 
