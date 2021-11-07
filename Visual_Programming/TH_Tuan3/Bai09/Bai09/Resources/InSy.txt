@@ -1,0 +1,26 @@
+Xây dựng HTTT trên các framework
+Phân tích thiết kế hệ thống thông tin
+Hệ quản trị cơ sở dữ liệu
+Quản lý dự án công nghệ thông tin
+Lập trình Java
+Hoạch định nguồn lực doanh nghiệp
+Phát triển ứng dụng web
+Cơ sở dữ liệu phân tán
+Khai thác dữ liệu
+Kho dữ liệu và OLAP
+Phân tích dữ liệu kinh doanh
+Giới thiệu ngành Hệ thống thông tin
+Hệ thống thông tin kế toán
+Hệ hỗ trợ quyết định
+Thương mại điện tử
+Hệ thống thông tin quản lý
+Phân tích không gian
+Hệ cơ sở dữ liệu không gian
+Nhập môn Hệ thống thông tin địa lý
+An toàn và bảo mật Hệ thống thông tin
+Sinh tin học (Bioinformatics)
+Điện toán đám mây
+Dữ liệu lớn
+Mạng xã hội
+Khóa luận tốt nghiệp
+Thực tập doanh nghiệp

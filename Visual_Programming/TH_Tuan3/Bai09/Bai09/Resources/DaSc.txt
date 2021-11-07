@@ -1,0 +1,21 @@
+Giới thiệu ngành Khoa học dữ liệu
+Thống kê và xác suất chuyên sâu
+Phân tích và trực quan dữ liệu
+Học máy thống kê
+Thu thập và tiền xử lý dữ liệu
+Phân tích dữ liệu lớn
+Deep Learning trong khoa học dữ liệu
+Đồ án khoa học dữ liệu và ứng dụng
+Tính toán song song & phân tán
+Tối ứu hoá và ứng dụng
+Hệ khuyến nghị
+Phân tích thống kê đa biến
+Thống kê Bayes
+Thiết kế và phân tích thực nghiệm
+Xử lý ngôn ngữ tự nhiên cho Khoa học Dữ liệu
+Các giải thuật khai phá dữ liệu lớn
+Phân tích dữ liệu lớn trong tài chính
+Phân tích dữ liệu truyền thông xã hội
+Phân tích dữ liệu chuỗi thời gian và ứng dụng
+Mô hình đồ thị xác suất
+Khoá luận tốt nghiệp

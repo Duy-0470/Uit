@@ -1,0 +1,40 @@
+Vi xử lý – vi điều khiển
+Thiết kế luận lý số
+Thực hành Kiến trúc Máy tính
+Lý thuyết mạch điện
+Các thiết bị và mạch điện tử
+Thiết kế hệ thống số với HDL
+Thiết kế hệ thống nhúng
+Thiết kế vi mạch số
+Thiết kế vi mạch tương tự
+Thiết kế hệ thống SoC
+Thiết kế hệ thống nhúng không dây
+Trí tuệ nhân tạo cho IoT
+Đồ án chuyên ngành Thiết kế vi mạch và phần cứng
+Đồ án chuyên ngành Hệ thống nhúng và IoT
+Tiếng Anh chuyên ngành KTMT
+Thiết kế vi mạch hỗn hợp
+Tự động hóa thiết kế vi mạch
+Kỹ thuật thiết kế kiểm tra
+Xử lý tín hiệu số và Ứng dụng
+Kỹ thuật hệ thống máy tính
+Chuyên đề thiết kế vi mạch 1
+Chuyên đề thiết kế vi mạch 2
+Điều khiển tự động
+Logic mờ và ứng dụng
+Lập trình nhúng trên các thiết bị di động
+Tương tác người máy
+Lập trình hệ thống
+Công nghệ IoT và Ứng dụng
+Trí tuệ nhân tạo cho hệ thống nhúng
+Hệ thống thông minh
+Trí tuệ nhân tạo cho xe tự hành
+Kiến trúc IoT: Giao thức mạng và bảo mật
+Thiết kế Antenna tích hợp cho thiết bị IoT
+Chuyên đề thiết kế hệ thống nhúng 1
+Chuyên đề thiết kế hệ thống nhúng 2
+Đồ án 1
+Đồ án 2
+Thực tập doanh nghiệp
+Khóa luận tốt nghiệp
+Luận văn chuyên sâu đặc thù

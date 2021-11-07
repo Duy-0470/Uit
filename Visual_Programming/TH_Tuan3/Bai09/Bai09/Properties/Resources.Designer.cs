@@ -8,9 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-namespace Bai09.Properties
-{
+namespace Bai09.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -18,52 +19,311 @@ namespace Bai09.Properties
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Bai09.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vi xử lý – vi điều khiển
+        ///Thiết kế luận lý số
+        ///Thực hành Kiến trúc Máy tính
+        ///Lý thuyết mạch điện
+        ///Các thiết bị và mạch điện tử
+        ///Thiết kế hệ thống số với HDL
+        ///Thiết kế hệ thống nhúng
+        ///Thiết kế vi mạch số
+        ///Thiết kế vi mạch tương tự
+        ///Thiết kế hệ thống SoC
+        ///Thiết kế hệ thống nhúng không dây
+        ///Trí tuệ nhân tạo cho IoT
+        ///Đồ án chuyên ngành Thiết kế vi mạch và phần cứng
+        ///Đồ án chuyên ngành Hệ thống nhúng và IoT
+        ///Tiếng Anh chuyên ngành KTMT
+        ///Thiết kế vi mạch hỗn hợp
+        ///Tự động hóa thiết kế vi mạch
+        ///Kỹ thuật thiết kế ki [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CE {
+            get {
+                return ResourceManager.GetString("CE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lập trình
+        ///Mạng máy tính
+        ///Thực hành nghề nghiệp
+        ///Thiết kế và phát triển cơ sở dữ liệu
+        ///Bảo mật
+        ///Quản lý dự án máy tính thành công
+        ///Thiết kế và phát triển website
+        ///Kiến trúc máy tính
+        ///Dự án nghiên cứu
+        ///Công nghệ kinh doanh thông minh
+        ///Cấu trúc dữ liệu và giải thuật
+        ///Internet of Things
+        ///An toàn mạng máy tính
+        ///Pháp chứng kỹ thuật số
+        ///Quản lý an toàn thông tin
+        ///Hoạt động an ninh mạng
+        ///Công nghệ mạng nâng cao
+        ///Thiết kế và quản lý mạng
+        ///Dự án cá nhân
+        ///.
+        /// </summary>
+        internal static string CNaDS {
+            get {
+                return ResourceManager.GetString("CNaDS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giới thiệu ngành MMT&amp;TTDL
+        ///An toàn mạng máy tính
+        ///Hệ thống nhúng mạng không dây
+        ///Truyền dữ liệu
+        ///Lập trình mạng căn bản
+        ///Phát triển ứng dụng trên thiết bị di động
+        ///Quản trị mạng và hệ thống
+        ///Thiết kế mạng
+        ///Đánh giá hiệu năng hệ thống mạng máy tính
+        ///Công nghệ Internet of things hiện đại
+        ///Hệ tính toán phân bố
+        ///Công nghệ truyền thông đa phương tiện
+        ///Công nghệ mạng viễn thông
+        ///Giải thuật xử lý song song và phân bố
+        ///Thương mại điện tử và triển khai ứng dụng
+        ///Tính toán lưới
+        ///Pháp chứng kỹ thuật số
+        ///Tấn công mạng        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CNaDT {
+            get {
+                return ResourceManager.GetString("CNaDT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Các hệ cơ sở tri thức
+        ///Biểu diễn tri thức và suy luận
+        ///Trí tuệ nhân tạo nâng cao
+        ///Hệ thống đa tác tử
+        ///Khai thác dữ liệu và ứng dụng
+        ///Lập trình symbolic trong trí tuệ nhân tạo
+        ///Máy học nâng cao
+        ///Các hệ giải bài toán thông minh
+        ///Trí tuệ nhân tạo
+        ///Máy học
+        ///Xử lý ngôn ngữ tự nhiên
+        ///Ngữ nghĩa học tính toán
+        ///Xử lý ngôn ngữ tự nhiên nâng cao
+        ///Các hệ thống hỏi-đáp
+        ///Máy học trong xử lý ngôn ngữ tự nhiên
+        ///Ngôn ngữ học ngữ liệu
+        ///Dịch máy
+        ///Nhập môn Thị giác máy tính
+        ///Đồ họa máy tính
+        ///Thị giác máy tính nâng cao
+        ///Thị giá [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CS {
+            get {
+                return ResourceManager.GetString("CS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giới thiệu ngành Khoa học dữ liệu
+        ///Thống kê và xác suất chuyên sâu
+        ///Phân tích và trực quan dữ liệu
+        ///Học máy thống kê
+        ///Thu thập và tiền xử lý dữ liệu
+        ///Phân tích dữ liệu lớn
+        ///Deep Learning trong khoa học dữ liệu
+        ///Đồ án khoa học dữ liệu và ứng dụng
+        ///Tính toán song song &amp; phân tán
+        ///Tối ứu hoá và ứng dụng
+        ///Hệ khuyến nghị
+        ///Phân tích thống kê đa biến
+        ///Thống kê Bayes
+        ///Thiết kế và phân tích thực nghiệm
+        ///Xử lý ngôn ngữ tự nhiên cho Khoa học Dữ liệu
+        ///Các giải thuật khai phá dữ liệu lớn
+        ///Phân tích dữ liệu lớn tro [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DaSc {
+            get {
+                return ResourceManager.GetString("DaSc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giới thiệu ngành Thương mại điện tử
+        ///Kinh tế học đại cương
+        ///Tiếp thị căn bản
+        ///Phân tích thiết kế quy trình nghiệp vụ doanh nghiệp
+        ///Tiếp thị trực tuyến
+        ///Thiết kế hệ thống TMĐT
+        ///Quản trị quan hệ khách hàng và nhà cung cấp
+        ///Hệ thống thanh toán trực tuyến
+        ///Quản trị dự án TMĐT
+        ///Pháp luật trong TMĐT
+        ///An toàn và bảo mật TMĐT
+        ///Nhập môn quản trị chuỗi cung ứng
+        ///Quản trị chiến lược kinh doanh điện tử
+        ///Quản trị sản xuất
+        ///Quản trị tài chính doanh nghiệp
+        ///Quản trị kênh phân phối
+        ///Quản trị bán hàng
+        ///Quản trị nhân lực
+        ///Qu [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EC {
+            get {
+                return ResourceManager.GetString("EC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giới thiệu ngành An toàn Thông tin
+        ///Lập trình mạng căn bản
+        ///An toàn Mạng máy tính
+        ///Cơ chế hoạt động của mã độc
+        ///Quản trị mạng và hệ thống
+        ///Mật mã học
+        ///Lập trình hệ thống
+        ///Đồ án chuyên ngành
+        ///Hệ thống tìm kiếm, phát hiện và ngăn ngừa xâm nhập
+        ///An toàn mạng không dây và di động
+        ///Quản lý rủi ro và an toàn thông tin trong doanh nghiệp
+        ///Kỹ thuật phân tích mã độc
+        ///Bảo mật web và ứng dụng
+        ///Pháp chứng kỹ thuật số
+        ///Công nghệ Internet of Things hiện đại
+        ///Bảo mật Internet of things
+        ///An ninh nhân sự, định danh và chứng [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string InSe {
+            get {
+                return ResourceManager.GetString("InSe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Xây dựng HTTT trên các framework
+        ///Phân tích thiết kế hệ thống thông tin
+        ///Hệ quản trị cơ sở dữ liệu
+        ///Quản lý dự án công nghệ thông tin
+        ///Lập trình Java
+        ///Hoạch định nguồn lực doanh nghiệp
+        ///Phát triển ứng dụng web
+        ///Cơ sở dữ liệu phân tán
+        ///Khai thác dữ liệu
+        ///Kho dữ liệu và OLAP
+        ///Phân tích dữ liệu kinh doanh
+        ///Giới thiệu ngành Hệ thống thông tin
+        ///Hệ thống thông tin kế toán
+        ///Hệ hỗ trợ quyết định
+        ///Thương mại điện tử
+        ///Hệ thống thông tin quản lý
+        ///Phân tích không gian
+        ///Hệ cơ sở dữ liệu không gian
+        ///Nhập môn Hệ thống th [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string InSy {
+            get {
+                return ResourceManager.GetString("InSy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Xử lý dữ liệu thống kê
+        ///Công nghệ Dữ liệu lớn
+        ///Kho dữ liệu và OLAP
+        ///Hệ hỗ trợ ra quyết định
+        ///Kỹ thuật lập trình Python
+        ///Phân tích dữ liệu
+        ///Thực tập doanh nghiệp
+        ///Quản trị doanh nghiệp
+        ///Hệ thống quản trị quy trình nghiệp vụ
+        ///Quản lý dự án công nghệ thông tin
+        ///Hoạch định nguồn lực doanh nghiệp
+        ///Quản trị quan hệ khách hàng
+        ///Kiến trúc và tích hợp hệ thống
+        ///Các công nghệ nền
+        ///Tối ưu hóa công cụ tìm kiếm (SEO)
+        ///Kỹ thuật phát triển hệ thống Web
+        ///Mạng xã hội
+        ///Thương mại điện tử
+        ///Công nghệ Java
+        ///Công nghệ lập trình  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IT {
+            get {
+                return ResourceManager.GetString("IT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Giới thiệu ngành Kỹ thuật Phần mềm
+        ///Nhập môn công nghệ phần mềm
+        ///Phương pháp phát triển phần mềm hướng đối tượng
+        ///Phương pháp mô hình hóa
+        ///Nhập môn phát triển game
+        ///Nhập môn ứng dụng di động
+        ///Đặc tả hình thức
+        ///Công nghệ phần mềm chuyên sâu
+        ///Phát triển phần mềm mã nguồn mở
+        ///Giao tiếp người máy
+        ///Kiểm chứng phần mềm
+        ///Quản lý dự án phát triển phần mềm
+        ///Ngôn ngữ lập trình Java
+        ///Điện toán đám mây
+        ///Chuyên đề CSDL nâng cao
+        ///Các phương pháp lập trình
+        ///Công nghệ Web và ứng dụng
+        ///Chuyên đề E-l [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SE {
+            get {
+                return ResourceManager.GetString("SE", resourceCulture);
             }
         }
     }

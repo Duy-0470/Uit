@@ -1,0 +1,29 @@
+Giới thiệu ngành An toàn Thông tin
+Lập trình mạng căn bản
+An toàn Mạng máy tính
+Cơ chế hoạt động của mã độc
+Quản trị mạng và hệ thống
+Mật mã học
+Lập trình hệ thống
+Đồ án chuyên ngành
+Hệ thống tìm kiếm, phát hiện và ngăn ngừa xâm nhập
+An toàn mạng không dây và di động
+Quản lý rủi ro và an toàn thông tin trong doanh nghiệp
+Kỹ thuật phân tích mã độc
+Bảo mật web và ứng dụng
+Pháp chứng kỹ thuật số
+Công nghệ Internet of Things hiện đại
+Bảo mật Internet of things
+An ninh nhân sự, định danh và chứng thực
+An toàn dữ liệu, khôi phục thông tin sau sự cố
+An toàn mạng máy tính nâng cao
+An toàn kiến trúc hệ thống
+Lập trình an toàn và khai thác lỗ hổng phần mềm
+Phương pháp học máy trong an toàn thông tin
+An toàn thông tin trong kỷ nguyên máy tính lượng tử
+Thực tập doanh nghiệp
+Hệ thống nhúng Mạng không dây
+Lập trình ứng dụng Web
+Tấn công mạng
+Đồ án chuyên ngành
+Khóa luận tốt nghiệp

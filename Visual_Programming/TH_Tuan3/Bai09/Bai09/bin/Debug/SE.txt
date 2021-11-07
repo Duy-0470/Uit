@@ -1,0 +1,46 @@
+Giới thiệu ngành Kỹ thuật Phần mềm
+Nhập môn công nghệ phần mềm
+Phương pháp phát triển phần mềm hướng đối tượng
+Phương pháp mô hình hóa
+Nhập môn phát triển game
+Nhập môn ứng dụng di động
+Đặc tả hình thức
+Công nghệ phần mềm chuyên sâu
+Phát triển phần mềm mã nguồn mở
+Giao tiếp người máy
+Kiểm chứng phần mềm
+Quản lý dự án phát triển phần mềm
+Ngôn ngữ lập trình Java
+Điện toán đám mây
+Chuyên đề CSDL nâng cao
+Các phương pháp lập trình
+Công nghệ Web và ứng dụng
+Chuyên đề E-learning
+Xử lý song song
+Công nghệ Portal
+Máy học và các công cụ
+Công nghệ .NET
+Lập trình trên thiết bị di động
+Chuyên đề E-Government
+Chuyên đề E-Commerce
+Một số thuật toán thông minh
+Phát triển ứng dụng VR
+Phát triển, vận hành, bảo trì phần mềm
+Chuyên đề các quy trình phát triển phần mềm hiện đại
+Kiến trúc phần mềm
+Kỹ thuật phân tích yêu cầu
+Chuyên đề J2EE
+Lập trình game nâng cao
+Thiết kế game
+Lập trình đồ họa 3 chiều với Direct 3D
+Phát triển và vận hành game
+Lập trình TTNT trong game
+Lập trình game trên các thiết bị di động
+Thiết kế 3D game engine
+Đồ án 1
+Thực tập tốt nghiệp
+Đồ án 2
+Seminar các vấn đề hiện đại của Công nghệ Phần mềm
+Mẫu thiết kế
+Nguyên lý thiết kế thế giới ảo
+Chuyên đề Mobile and Pervasive Computing
