@@ -16,7 +16,6 @@ namespace Bai06
         string operation = "";
         bool operator_ = false;
         bool pressed = false;
-        bool dot_pressed = false;
         bool reset = false;
         public Form1()
         {
@@ -32,9 +31,17 @@ namespace Bai06
             }
             if (textBox.Text.Length > 9)
                 return;
+
+            if (textBox.Text.Contains("."))
+            {
+                btn_dot.Enabled = false;
+            }    
+            else
+            {
+                btn_dot.Enabled = true;
+            }    
             operator_ = false;
             reset = false;
-            btn_dot.Enabled = true;
             btn_backspace.Enabled = true;
 
             textBox.Text = textBox.Text + b.Text;
@@ -43,18 +50,13 @@ namespace Bai06
 
         private void btn_dot_Click(object sender, EventArgs e)
         {
-            dot_pressed = true;
             Button b = (Button)sender;
             if (operator_)
             {
                 textBox.Clear();
-            }
-            if (dot_pressed)
-            {
-                btn_dot.Enabled = false;
-            }                
-            
+            }                  
             operator_ = false;
+            btn_dot.Enabled = false;
             textBox.Text = textBox.Text + b.Text;
         }
 
@@ -68,18 +70,19 @@ namespace Bai06
 
             operator_ = true;
             pressed = true;
-            btn_dot.Enabled = false;
+            btn_dot.Enabled = true;
 
             try
             {
+
                 value = Double.Parse(textBox.Text);
             }
             catch
             {
                 return;
             }
-            label.Text = textBox.Text + " " + operation;
             operation = b.Text;
+            label.Text = textBox.Text + " " + operation;
         }
 
         private void equalation_Click(object sender, EventArgs e)
@@ -88,7 +91,7 @@ namespace Bai06
             label.Text = textBox.Text;
             pressed = false;
             reset = true;
-
+            value = double.Parse(textBox.Text);
             btn_backspace.Enabled = false;
             
         }
@@ -120,6 +123,11 @@ namespace Bai06
                         }
                         else
                             textBox.Text = Output(value / Double.Parse(textBox.Text));
+                        break;
+                    }
+                default:
+                    {
+                        textBox.Text = label.Text;
                         break;
                     }
             }
@@ -176,18 +184,18 @@ namespace Bai06
 
         private void btn_resetall_Click(object sender, EventArgs e)
         {
-            dot_pressed = true;
             label.Text = "";
             textBox.Text = "0";
+            operation = "";
             value = 0;
+            btn_dot.Enabled = true;
         }
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
-            dot_pressed = true;
-            label.Text = "";
             textBox.Text = "0";
-            value = 0;
+            btn_dot.Enabled = true;
+
         }
 
         private void btn_backspace_Click(object sender, EventArgs e)
@@ -195,6 +203,15 @@ namespace Bai06
             textBox.Text = textBox.Text.Remove(textBox.Text.Length - 1);
             if (textBox.Text.Length == 0)
                 textBox.Text = "0";
+
+            if (textBox.Text.Contains("."))
+            {
+                btn_dot.Enabled = false;
+            }
+            else
+            {
+                btn_dot.Enabled = true;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -94,7 +94,7 @@ namespace Bai06
             this.btn_dot.Name = "btn_dot";
             this.btn_dot.Size = new System.Drawing.Size(50, 36);
             this.btn_dot.TabIndex = 2;
-            this.btn_dot.Text = ",";
+            this.btn_dot.Text = ".";
             this.btn_dot.UseVisualStyleBackColor = true;
             this.btn_dot.Click += new System.EventHandler(this.btn_dot_Click);
             // 
@@ -287,12 +287,14 @@ namespace Bai06
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editToolStripMenuItem,
             this.viewToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(362, 24);
             this.menuStrip1.TabIndex = 25;
             this.menuStrip1.Text = "menuStrip1";
@@ -451,7 +453,7 @@ namespace Bai06
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
