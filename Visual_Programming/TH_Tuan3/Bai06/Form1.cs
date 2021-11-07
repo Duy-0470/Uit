@@ -146,7 +146,12 @@ namespace Bai06
             }
             else
             {
-                textBox.Text = Output(1 / Double.Parse(textBox.Text));
+                try
+                {
+                    textBox.Text = Output(1 / Double.Parse(textBox.Text));
+                }
+                catch
+                { return; }
             }
             
         }
