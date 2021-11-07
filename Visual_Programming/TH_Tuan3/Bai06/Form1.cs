@@ -74,7 +74,6 @@ namespace Bai06
 
             try
             {
-
                 value = Double.Parse(textBox.Text);
             }
             catch
@@ -88,12 +87,22 @@ namespace Bai06
         private void equalation_Click(object sender, EventArgs e)
         {
             Calculate();
-            label.Text = textBox.Text;
+            if (textBox.Text != "Cannot divide by zero.")
+            {
+                label.Text = textBox.Text;
+            }    
+            
             pressed = false;
             reset = true;
-            value = double.Parse(textBox.Text);
             btn_backspace.Enabled = false;
-            
+            try
+            {
+                value = Double.Parse(textBox.Text);
+            }
+            catch
+            {
+                return;
+            }
         }
 
         void Calculate()
@@ -119,7 +128,7 @@ namespace Bai06
                     {
                         if (textBox.Text == "0")
                         {
-                            textBox.Text = "Cannot divided by zero.";
+                            textBox.Text = "Cannot divide by zero.";
                         }
                         else
                             textBox.Text = Output(value / Double.Parse(textBox.Text));
@@ -132,15 +141,7 @@ namespace Bai06
                     }
             }
 
-            operation = "";
-            for (int i = 0; i < textBox.Text.Length; i++)
-            {
-                if (textBox.Text[i] == ',')
-                {
-                    btn_dot.Enabled = false;
-                    break;
-                }    
-            }    
+            operation = ""; 
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -188,12 +189,14 @@ namespace Bai06
             textBox.Text = "0";
             operation = "";
             value = 0;
+            pressed = false;
             btn_dot.Enabled = true;
         }
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
             textBox.Text = "0";
+            pressed = false;
             btn_dot.Enabled = true;
 
         }

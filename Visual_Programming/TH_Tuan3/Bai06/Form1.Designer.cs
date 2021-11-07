@@ -68,6 +68,7 @@ namespace Bai06
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Blue;
             this.button1.Location = new System.Drawing.Point(73, 240);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 36);
@@ -79,6 +80,7 @@ namespace Bai06
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Blue;
             this.button2.Location = new System.Drawing.Point(130, 240);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 36);
@@ -90,6 +92,7 @@ namespace Bai06
             // btn_dot
             // 
             this.btn_dot.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dot.ForeColor = System.Drawing.Color.Blue;
             this.btn_dot.Location = new System.Drawing.Point(187, 240);
             this.btn_dot.Name = "btn_dot";
             this.btn_dot.Size = new System.Drawing.Size(50, 36);
@@ -101,6 +104,7 @@ namespace Bai06
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Red;
             this.button4.Location = new System.Drawing.Point(244, 240);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(50, 36);
@@ -112,6 +116,7 @@ namespace Bai06
             // equalation
             // 
             this.equalation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.equalation.ForeColor = System.Drawing.Color.Red;
             this.equalation.Location = new System.Drawing.Point(300, 240);
             this.equalation.Name = "equalation";
             this.equalation.Size = new System.Drawing.Size(50, 36);
@@ -123,6 +128,7 @@ namespace Bai06
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Blue;
             this.button5.Location = new System.Drawing.Point(301, 198);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(50, 36);
@@ -134,6 +140,7 @@ namespace Bai06
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Red;
             this.button7.Location = new System.Drawing.Point(244, 198);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(50, 36);
@@ -145,6 +152,7 @@ namespace Bai06
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.Blue;
             this.button8.Location = new System.Drawing.Point(187, 198);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(50, 36);
@@ -156,6 +164,7 @@ namespace Bai06
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.Blue;
             this.button9.Location = new System.Drawing.Point(130, 198);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(50, 36);
@@ -167,6 +176,7 @@ namespace Bai06
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.Blue;
             this.button10.Location = new System.Drawing.Point(73, 198);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(50, 36);
@@ -178,6 +188,7 @@ namespace Bai06
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.Blue;
             this.button11.Location = new System.Drawing.Point(301, 156);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(50, 36);
@@ -189,6 +200,7 @@ namespace Bai06
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.Red;
             this.button12.Location = new System.Drawing.Point(244, 156);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(50, 36);
@@ -200,6 +212,7 @@ namespace Bai06
             // button13
             // 
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.Blue;
             this.button13.Location = new System.Drawing.Point(187, 156);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(50, 36);
@@ -211,6 +224,7 @@ namespace Bai06
             // button14
             // 
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.Color.Blue;
             this.button14.Location = new System.Drawing.Point(130, 156);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(50, 36);
@@ -222,6 +236,7 @@ namespace Bai06
             // button15
             // 
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.Color.Blue;
             this.button15.Location = new System.Drawing.Point(73, 156);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(50, 36);
@@ -233,6 +248,7 @@ namespace Bai06
             // button16
             // 
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ForeColor = System.Drawing.Color.Blue;
             this.button16.Location = new System.Drawing.Point(301, 114);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(50, 36);
@@ -244,6 +260,7 @@ namespace Bai06
             // button17
             // 
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.ForeColor = System.Drawing.Color.Red;
             this.button17.Location = new System.Drawing.Point(244, 114);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(50, 36);
@@ -255,6 +272,7 @@ namespace Bai06
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.ForeColor = System.Drawing.Color.Blue;
             this.button18.Location = new System.Drawing.Point(187, 114);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(50, 36);
@@ -266,6 +284,7 @@ namespace Bai06
             // button19
             // 
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.ForeColor = System.Drawing.Color.Blue;
             this.button19.Location = new System.Drawing.Point(130, 114);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(50, 36);
@@ -277,6 +296,7 @@ namespace Bai06
             // button20
             // 
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.Color.Blue;
             this.button20.Location = new System.Drawing.Point(73, 114);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(50, 36);
@@ -331,6 +351,7 @@ namespace Bai06
             // btn_backspace
             // 
             this.btn_backspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_backspace.ForeColor = System.Drawing.Color.Red;
             this.btn_backspace.Location = new System.Drawing.Point(74, 72);
             this.btn_backspace.Name = "btn_backspace";
             this.btn_backspace.Size = new System.Drawing.Size(107, 36);
@@ -342,6 +363,7 @@ namespace Bai06
             // btn_reset
             // 
             this.btn_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reset.ForeColor = System.Drawing.Color.Red;
             this.btn_reset.Location = new System.Drawing.Point(187, 72);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(77, 36);
@@ -353,6 +375,7 @@ namespace Bai06
             // btn_resetall
             // 
             this.btn_resetall.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_resetall.ForeColor = System.Drawing.Color.Red;
             this.btn_resetall.Location = new System.Drawing.Point(271, 72);
             this.btn_resetall.Name = "btn_resetall";
             this.btn_resetall.Size = new System.Drawing.Size(80, 36);
@@ -364,6 +387,7 @@ namespace Bai06
             // button25
             // 
             this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.ForeColor = System.Drawing.Color.Red;
             this.button25.Location = new System.Drawing.Point(12, 240);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(50, 36);
@@ -374,6 +398,7 @@ namespace Bai06
             // button24
             // 
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.ForeColor = System.Drawing.Color.Red;
             this.button24.Location = new System.Drawing.Point(12, 198);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(50, 36);
@@ -384,6 +409,7 @@ namespace Bai06
             // button23
             // 
             this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.ForeColor = System.Drawing.Color.Red;
             this.button23.Location = new System.Drawing.Point(12, 156);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(50, 36);
@@ -394,6 +420,7 @@ namespace Bai06
             // button22
             // 
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.ForeColor = System.Drawing.Color.Red;
             this.button22.Location = new System.Drawing.Point(12, 114);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(50, 36);
@@ -447,6 +474,7 @@ namespace Bai06
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.Blue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
