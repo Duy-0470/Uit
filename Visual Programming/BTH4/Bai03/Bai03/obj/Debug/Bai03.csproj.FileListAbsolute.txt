@@ -1,0 +1,16 @@
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\bin\Debug\Bai03.exe.config
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\bin\Debug\Bai03.exe
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\bin\Debug\Bai03.pdb
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\bin\Debug\Interop.WMPLib.dll
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\bin\Debug\AxInterop.WMPLib.dll
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Bai03.csproj.AssemblyReference.cache
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Bai03.csproj.SuggestedBindingRedirects.cache
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Interop.WMPLib.dll
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\AxInterop.WMPLib.dll
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Bai03.csproj.ResolveComReference.cache
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Bai03.Form1.resources
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Bai03.Properties.Resources.resources
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Bai03.csproj.GenerateResource.cache
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Bai03.csproj.CoreCompileInputs.cache
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Bai03.exe
+E:\Spaghetti\Visual Programming\TH\BTH4\Bai03\Bai03\obj\Debug\Bai03.pdb
