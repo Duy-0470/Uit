@@ -59,8 +59,7 @@ namespace Bai05
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            Close();
-            FormMain.instance.Show();
+            Close();            
         }
 
         private void textBoxID_TextChanged(object sender, EventArgs e)
@@ -76,6 +75,11 @@ namespace Bai05
         private void textBoxGPA_TextChanged(object sender, EventArgs e)
         {
             buttonAdd.Enabled = AreControlsValid(Controls);
+        }
+
+        private void FormAddStudent_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormMain.instance.Show();
         }
     }
 }

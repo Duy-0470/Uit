@@ -10,3 +10,15 @@ D:\Spaghetti\Visual Programming\Practice\Bai05\Bai05\obj\Debug\Bai05.csproj.Gene
 D:\Spaghetti\Visual Programming\Practice\Bai05\Bai05\obj\Debug\Bai05.csproj.CoreCompileInputs.cache
 D:\Spaghetti\Visual Programming\Practice\Bai05\Bai05\obj\Debug\Bai05.exe
 D:\Spaghetti\Visual Programming\Practice\Bai05\Bai05\obj\Debug\Bai05.pdb
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\bin\Debug\Bai05.exe.config
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\bin\Debug\Bai05.exe
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\bin\Debug\Bai05.pdb
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\obj\Debug\Bai05.csproj.AssemblyReference.cache
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\obj\Debug\Bai05.csproj.SuggestedBindingRedirects.cache
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\obj\Debug\Bai05.FormAddStudent.resources
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\obj\Debug\Bai05.FormMain.resources
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\obj\Debug\Bai05.Properties.Resources.resources
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\obj\Debug\Bai05.csproj.GenerateResource.cache
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\obj\Debug\Bai05.csproj.CoreCompileInputs.cache
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\obj\Debug\Bai05.exe
+E:\GIT\The Squad\Uit\Year 2\Visual Programming\BTH4\Bai05\Bai05\obj\Debug\Bai05.pdb
