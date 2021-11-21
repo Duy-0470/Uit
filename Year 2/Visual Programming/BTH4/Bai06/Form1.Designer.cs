@@ -29,116 +29,123 @@ namespace Bai05
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_copy = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtTarget = new System.Windows.Forms.TextBox();
-            this.txtSource = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.GruopBoxInfo = new System.Windows.Forms.GroupBox();
+            this.ButtonCopy = new System.Windows.Forms.Button();
+            this.ButtonBrowseDestination = new System.Windows.Forms.Button();
+            this.ButtonBrowseSource = new System.Windows.Forms.Button();
+            this.TextBoxDestination = new System.Windows.Forms.TextBox();
+            this.TextBoxSource = new System.Windows.Forms.TextBox();
+            this.LabelDestination = new System.Windows.Forms.Label();
+            this.LabelSource = new System.Windows.Forms.Label();
+            this.GruopBoxProgress = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label4 = new System.Windows.Forms.Label();
             this.worker = new System.ComponentModel.BackgroundWorker();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.StatusStripProgress = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabelCopying = new System.Windows.Forms.ToolStripStatusLabel();
+            this.GruopBoxInfo.SuspendLayout();
+            this.GruopBoxProgress.SuspendLayout();
+            this.StatusStripProgress.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // GruopBoxInfo
             // 
-            this.groupBox1.Controls.Add(this.btn_copy);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.txtTarget);
-            this.groupBox1.Controls.Add(this.txtSource);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.groupBox1.Location = new System.Drawing.Point(27, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(466, 127);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sao chép tập tin";
+            this.GruopBoxInfo.Controls.Add(this.ButtonCopy);
+            this.GruopBoxInfo.Controls.Add(this.ButtonBrowseDestination);
+            this.GruopBoxInfo.Controls.Add(this.ButtonBrowseSource);
+            this.GruopBoxInfo.Controls.Add(this.TextBoxDestination);
+            this.GruopBoxInfo.Controls.Add(this.TextBoxSource);
+            this.GruopBoxInfo.Controls.Add(this.LabelDestination);
+            this.GruopBoxInfo.Controls.Add(this.LabelSource);
+            this.GruopBoxInfo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GruopBoxInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.GruopBoxInfo.Location = new System.Drawing.Point(27, 12);
+            this.GruopBoxInfo.Name = "GruopBoxInfo";
+            this.GruopBoxInfo.Size = new System.Drawing.Size(466, 127);
+            this.GruopBoxInfo.TabIndex = 0;
+            this.GruopBoxInfo.TabStop = false;
+            this.GruopBoxInfo.Text = "Sao chép tập tin";
             // 
-            // btn_copy
+            // ButtonCopy
             // 
-            this.btn_copy.ForeColor = System.Drawing.Color.Black;
-            this.btn_copy.Location = new System.Drawing.Point(149, 94);
-            this.btn_copy.Name = "btn_copy";
-            this.btn_copy.Size = new System.Drawing.Size(179, 27);
-            this.btn_copy.TabIndex = 6;
-            this.btn_copy.Text = "Sao chép";
-            this.btn_copy.UseVisualStyleBackColor = true;
-            this.btn_copy.Click += new System.EventHandler(this.button3_Click);
+            this.ButtonCopy.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCopy.ForeColor = System.Drawing.Color.Black;
+            this.ButtonCopy.Location = new System.Drawing.Point(179, 94);
+            this.ButtonCopy.Name = "ButtonCopy";
+            this.ButtonCopy.Size = new System.Drawing.Size(116, 27);
+            this.ButtonCopy.TabIndex = 6;
+            this.ButtonCopy.Text = "Sao chép";
+            this.ButtonCopy.UseVisualStyleBackColor = true;
+            this.ButtonCopy.Click += new System.EventHandler(this.ButtonCopy_Click);
             // 
-            // button2
+            // ButtonBrowseDestination
             // 
-            this.button2.Location = new System.Drawing.Point(423, 54);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(37, 22);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "...";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ButtonBrowseDestination.Location = new System.Drawing.Point(423, 54);
+            this.ButtonBrowseDestination.Name = "ButtonBrowseDestination";
+            this.ButtonBrowseDestination.Size = new System.Drawing.Size(37, 22);
+            this.ButtonBrowseDestination.TabIndex = 5;
+            this.ButtonBrowseDestination.Text = "...";
+            this.ButtonBrowseDestination.UseVisualStyleBackColor = true;
+            this.ButtonBrowseDestination.Click += new System.EventHandler(this.ButtonBrowseDestination_Click);
             // 
-            // button1
+            // ButtonBrowseSource
             // 
-            this.button1.Location = new System.Drawing.Point(423, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 22);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ButtonBrowseSource.Location = new System.Drawing.Point(423, 17);
+            this.ButtonBrowseSource.Name = "ButtonBrowseSource";
+            this.ButtonBrowseSource.Size = new System.Drawing.Size(37, 22);
+            this.ButtonBrowseSource.TabIndex = 4;
+            this.ButtonBrowseSource.Text = "...";
+            this.ButtonBrowseSource.UseVisualStyleBackColor = true;
+            this.ButtonBrowseSource.Click += new System.EventHandler(this.ButtonBrowseSource_Click);
             // 
-            // txtTarget
+            // TextBoxDestination
             // 
-            this.txtTarget.Location = new System.Drawing.Point(149, 56);
-            this.txtTarget.Name = "txtTarget";
-            this.txtTarget.Size = new System.Drawing.Size(268, 20);
-            this.txtTarget.TabIndex = 3;
+            this.TextBoxDestination.Location = new System.Drawing.Point(149, 56);
+            this.TextBoxDestination.Name = "TextBoxDestination";
+            this.TextBoxDestination.Size = new System.Drawing.Size(268, 20);
+            this.TextBoxDestination.TabIndex = 3;
             // 
-            // txtSource
+            // TextBoxSource
             // 
-            this.txtSource.Location = new System.Drawing.Point(149, 19);
-            this.txtSource.Name = "txtSource";
-            this.txtSource.Size = new System.Drawing.Size(268, 20);
-            this.txtSource.TabIndex = 2;
+            this.TextBoxSource.Location = new System.Drawing.Point(149, 19);
+            this.TextBoxSource.Name = "TextBoxSource";
+            this.TextBoxSource.Size = new System.Drawing.Size(268, 20);
+            this.TextBoxSource.TabIndex = 2;
             // 
-            // label2
+            // LabelDestination
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Đường dẫn thư mục nguồn:";
+            this.LabelDestination.AutoSize = true;
+            this.LabelDestination.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelDestination.ForeColor = System.Drawing.Color.Black;
+            this.LabelDestination.Location = new System.Drawing.Point(6, 63);
+            this.LabelDestination.Name = "LabelDestination";
+            this.LabelDestination.Size = new System.Drawing.Size(130, 14);
+            this.LabelDestination.TabIndex = 1;
+            this.LabelDestination.Text = "Đường dẫn thư mục đích:";
             // 
-            // label1
+            // LabelSource
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(6, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Đường dẫn thư mục nguồn:";
+            this.LabelSource.AutoSize = true;
+            this.LabelSource.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelSource.ForeColor = System.Drawing.Color.Black;
+            this.LabelSource.Location = new System.Drawing.Point(6, 26);
+            this.LabelSource.Name = "LabelSource";
+            this.LabelSource.Size = new System.Drawing.Size(140, 14);
+            this.LabelSource.TabIndex = 0;
+            this.LabelSource.Text = "Đường dẫn thư mục nguồn:";
             // 
-            // groupBox2
+            // GruopBoxProgress
             // 
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.progressBar1);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.groupBox2.Location = new System.Drawing.Point(27, 159);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(466, 58);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tiến trình sao chép";
+            this.GruopBoxProgress.Controls.Add(this.label3);
+            this.GruopBoxProgress.Controls.Add(this.progressBar1);
+            this.GruopBoxProgress.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GruopBoxProgress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.GruopBoxProgress.Location = new System.Drawing.Point(27, 159);
+            this.GruopBoxProgress.Name = "GruopBoxProgress";
+            this.GruopBoxProgress.Size = new System.Drawing.Size(466, 58);
+            this.GruopBoxProgress.TabIndex = 1;
+            this.GruopBoxProgress.TabStop = false;
+            this.GruopBoxProgress.Text = "Tiến trình sao chép";
             // 
             // label3
             // 
@@ -146,7 +153,7 @@ namespace Bai05
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(425, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 13);
+            this.label3.Size = new System.Drawing.Size(23, 14);
             this.label3.TabIndex = 1;
             this.label3.Text = "0%";
             // 
@@ -157,38 +164,46 @@ namespace Bai05
             this.progressBar1.Size = new System.Drawing.Size(451, 23);
             this.progressBar1.TabIndex = 0;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label4.Location = new System.Drawing.Point(0, 231);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Đang sao chép: ";
-            // 
             // worker
             // 
             this.worker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.worker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             // 
+            // StatusStripProgress
+            // 
+            this.StatusStripProgress.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabelCopying});
+            this.StatusStripProgress.Location = new System.Drawing.Point(0, 247);
+            this.StatusStripProgress.Name = "StatusStripProgress";
+            this.StatusStripProgress.Size = new System.Drawing.Size(507, 22);
+            this.StatusStripProgress.TabIndex = 2;
+            this.StatusStripProgress.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabelCopying
+            // 
+            this.toolStripStatusLabelCopying.Name = "toolStripStatusLabelCopying";
+            this.toolStripStatusLabelCopying.Size = new System.Drawing.Size(91, 17);
+            this.toolStripStatusLabelCopying.Text = "Đang sao chép: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 244);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(507, 269);
+            this.Controls.Add(this.StatusStripProgress);
+            this.Controls.Add(this.GruopBoxProgress);
+            this.Controls.Add(this.GruopBoxInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.Text = "Sao chép tập tin";
+            this.GruopBoxInfo.ResumeLayout(false);
+            this.GruopBoxInfo.PerformLayout();
+            this.GruopBoxProgress.ResumeLayout(false);
+            this.GruopBoxProgress.PerformLayout();
+            this.StatusStripProgress.ResumeLayout(false);
+            this.StatusStripProgress.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,19 +211,20 @@ namespace Bai05
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_copy;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtTarget;
-        private System.Windows.Forms.TextBox txtSource;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox GruopBoxInfo;
+        private System.Windows.Forms.Button ButtonCopy;
+        private System.Windows.Forms.Button ButtonBrowseDestination;
+        private System.Windows.Forms.Button ButtonBrowseSource;
+        private System.Windows.Forms.TextBox TextBoxDestination;
+        private System.Windows.Forms.TextBox TextBoxSource;
+        private System.Windows.Forms.Label LabelDestination;
+        private System.Windows.Forms.Label LabelSource;
+        private System.Windows.Forms.GroupBox GruopBoxProgress;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Label label4;
         private System.ComponentModel.BackgroundWorker worker;
+        private System.Windows.Forms.StatusStrip StatusStripProgress;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelCopying;
     }
 }
 
