@@ -1,0 +1,10 @@
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\bin\Debug\Bai05.exe.config
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\bin\Debug\Bai05.exe
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\bin\Debug\Bai05.pdb
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\obj\Debug\Bai06.csproj.AssemblyReference.cache
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\obj\Debug\Bai05.Form1.resources
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\obj\Debug\Bai05.Properties.Resources.resources
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\obj\Debug\Bai06.csproj.GenerateResource.cache
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\obj\Debug\Bai06.csproj.CoreCompileInputs.cache
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\obj\Debug\Bai05.exe
+C:\Users\HOANG LONG\Desktop\Uit\Visual Programming\BTH4\Bai06\obj\Debug\Bai05.pdb

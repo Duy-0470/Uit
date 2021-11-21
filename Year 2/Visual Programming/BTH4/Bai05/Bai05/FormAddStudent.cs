@@ -42,13 +42,21 @@ namespace Bai05
             bool valid = double.TryParse(textBoxGPA.Text, out double value);
             if (valid)
             {
+                double GPA = double.Parse(textBoxGPA.Text);
+                if (GPA < 0 || GPA > 10)
+                {
+                    MessageBox.Show("Điểm trung bình không hợp lệ", "Lỗi");
+                    return;
+                }
                 FormMain.students.Add(new Student(textBoxID.Text, textBoxName.Text, comboBoxDepartment.SelectedItem.ToString(), value));
                 
                 if (FormMain.dgv.Rows.Count > 1)
                 {
-                    foreach (DataGridViewRow row in FormMain.dgv.Rows)
+                    for (int i = 0; i < FormMain.dgv.RowCount; i++)
                     {
-                        if (row.Cells[1].Value.ToString().Contains(textBoxID.Text))
+                        if (FormMain.dgv.Rows[i].Cells[1].Value == null)
+                            break;
+                        if (FormMain.dgv.Rows[i].Cells[1].Value.ToString() == textBoxID.Text)
                         {
                             MessageBox.Show("Mã số sinh viên đã tồn tại", "Lỗi");
                             return;
@@ -66,7 +74,7 @@ namespace Bai05
             }
             else
             {
-                MessageBox.Show("Diem trung binh khong hop le", "Loi");
+                MessageBox.Show("Điểm trung bình không hợp lệ", "Lỗi");
             }
         }
 

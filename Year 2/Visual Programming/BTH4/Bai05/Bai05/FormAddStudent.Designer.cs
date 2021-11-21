@@ -47,9 +47,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelID.AutoSize = true;
             this.labelID.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelID.Location = new System.Drawing.Point(136, 78);
+            this.labelID.Location = new System.Drawing.Point(182, 98);
+            this.labelID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(115, 19);
+            this.labelID.Size = new System.Drawing.Size(140, 23);
             this.labelID.TabIndex = 0;
             this.labelID.Text = "Mã số sinh viên";
             // 
@@ -60,9 +61,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(152, 123);
+            this.labelName.Location = new System.Drawing.Point(202, 153);
+            this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(98, 19);
+            this.labelName.Size = new System.Drawing.Size(120, 23);
             this.labelName.TabIndex = 0;
             this.labelName.Text = "Tên sinh viên";
             // 
@@ -73,9 +75,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDepartment.AutoSize = true;
             this.labelDepartment.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDepartment.Location = new System.Drawing.Point(211, 167);
+            this.labelDepartment.Location = new System.Drawing.Point(266, 206);
+            this.labelDepartment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDepartment.Name = "labelDepartment";
-            this.labelDepartment.Size = new System.Drawing.Size(45, 19);
+            this.labelDepartment.Size = new System.Drawing.Size(55, 23);
             this.labelDepartment.TabIndex = 0;
             this.labelDepartment.Text = "Khoa";
             // 
@@ -86,9 +89,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelGPA.AutoSize = true;
             this.labelGPA.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGPA.Location = new System.Drawing.Point(132, 214);
+            this.labelGPA.Location = new System.Drawing.Point(176, 260);
+            this.labelGPA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGPA.Name = "labelGPA";
-            this.labelGPA.Size = new System.Drawing.Size(119, 19);
+            this.labelGPA.Size = new System.Drawing.Size(146, 23);
             this.labelGPA.TabIndex = 0;
             this.labelGPA.Text = "Điểm trung bình";
             // 
@@ -98,9 +102,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxID.Location = new System.Drawing.Point(302, 78);
+            this.textBoxID.Location = new System.Drawing.Point(403, 96);
+            this.textBoxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(305, 23);
+            this.textBoxID.Size = new System.Drawing.Size(405, 27);
             this.textBoxID.TabIndex = 1;
             this.textBoxID.TextChanged += new System.EventHandler(this.textBoxID_TextChanged);
             // 
@@ -110,9 +115,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxName.Location = new System.Drawing.Point(302, 123);
+            this.textBoxName.Location = new System.Drawing.Point(403, 151);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(305, 23);
+            this.textBoxName.Size = new System.Drawing.Size(405, 27);
             this.textBoxName.TabIndex = 1;
             this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
@@ -122,9 +128,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxGPA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGPA.Location = new System.Drawing.Point(302, 210);
+            this.textBoxGPA.Location = new System.Drawing.Point(403, 258);
+            this.textBoxGPA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxGPA.Name = "textBoxGPA";
-            this.textBoxGPA.Size = new System.Drawing.Size(106, 23);
+            this.textBoxGPA.Size = new System.Drawing.Size(140, 27);
             this.textBoxGPA.TabIndex = 1;
             this.textBoxGPA.TextChanged += new System.EventHandler(this.textBoxGPA_TextChanged);
             // 
@@ -146,9 +153,10 @@
             "An toàn thông tin",
             "Thương mại điện tử",
             "Khoa học Dữ liệu"});
-            this.comboBoxDepartment.Location = new System.Drawing.Point(302, 166);
+            this.comboBoxDepartment.Location = new System.Drawing.Point(403, 204);
+            this.comboBoxDepartment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxDepartment.Name = "comboBoxDepartment";
-            this.comboBoxDepartment.Size = new System.Drawing.Size(305, 25);
+            this.comboBoxDepartment.Size = new System.Drawing.Size(405, 28);
             this.comboBoxDepartment.TabIndex = 2;
             this.comboBoxDepartment.TabStop = false;
             // 
@@ -158,9 +166,10 @@
             this.buttonAdd.BackColor = System.Drawing.Color.LightGreen;
             this.buttonAdd.Enabled = false;
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.Location = new System.Drawing.Point(436, 312);
+            this.buttonAdd.Location = new System.Drawing.Point(581, 384);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(104, 32);
+            this.buttonAdd.Size = new System.Drawing.Size(139, 39);
             this.buttonAdd.TabIndex = 3;
             this.buttonAdd.Text = "Thêm mới";
             this.buttonAdd.UseVisualStyleBackColor = false;
@@ -171,9 +180,10 @@
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancel.BackColor = System.Drawing.Color.Tomato;
             this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancel.Location = new System.Drawing.Point(566, 312);
+            this.buttonCancel.Location = new System.Drawing.Point(755, 384);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(104, 32);
+            this.buttonCancel.Size = new System.Drawing.Size(139, 39);
             this.buttonCancel.TabIndex = 4;
             this.buttonCancel.Text = "Thoát";
             this.buttonCancel.UseVisualStyleBackColor = false;
@@ -181,9 +191,9 @@
             // 
             // FormAddStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 380);
+            this.ClientSize = new System.Drawing.Size(968, 468);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.comboBoxDepartment);
@@ -194,6 +204,7 @@
             this.Controls.Add(this.labelDepartment);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelID);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAddStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm sinh viên";
