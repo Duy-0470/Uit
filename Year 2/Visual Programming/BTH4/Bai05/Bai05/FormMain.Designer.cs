@@ -30,14 +30,14 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.chứcNăngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonAdd = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripTextBoxFind = new System.Windows.Forms.ToolStripTextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.toolStripButtonAdd = new System.Windows.Forms.ToolStripButton();
-            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ColumnOrder = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +55,7 @@
             this.chứcNăngToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(807, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(807, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -65,13 +65,22 @@
             this.addToolStripMenuItem,
             this.quitToolStripMenuItem});
             this.chứcNăngToolStripMenuItem.Name = "chứcNăngToolStripMenuItem";
-            this.chứcNăngToolStripMenuItem.Size = new System.Drawing.Size(82, 21);
+            this.chứcNăngToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.chứcNăngToolStripMenuItem.Text = "Chức năng";
+            // 
+            // addToolStripMenuItem
+            // 
+            this.addToolStripMenuItem.Image = global::Bai05.Properties.Resources.AddUser_16x;
+            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
+            this.addToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.addToolStripMenuItem.Text = "Thêm mới";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.quitToolStripMenuItem.Text = "Thoát";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
@@ -86,23 +95,33 @@
             this.toolStripTextBoxFind});
             this.toolStrip1.Location = new System.Drawing.Point(0, 25);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(421, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(437, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButtonAdd
+            // 
+            this.toolStripButtonAdd.Image = global::Bai05.Properties.Resources.AddUser_16x;
+            this.toolStripButtonAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAdd.Name = "toolStripButtonAdd";
+            this.toolStripButtonAdd.Size = new System.Drawing.Size(83, 22);
+            this.toolStripButtonAdd.Text = "Thêm mới";
+            this.toolStripButtonAdd.Click += new System.EventHandler(this.toolStripButtonAdd_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(112, 24);
+            this.toolStripLabel1.Size = new System.Drawing.Size(103, 22);
             this.toolStripLabel1.Text = "Tìm kiếm theo tên";
             // 
             // toolStripTextBoxFind
             // 
+            this.toolStripTextBoxFind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.toolStripTextBoxFind.Font = new System.Drawing.Font("Segoe UI", 8.830189F);
             this.toolStripTextBoxFind.Name = "toolStripTextBoxFind";
             this.toolStripTextBoxFind.Size = new System.Drawing.Size(200, 25);
@@ -125,24 +144,6 @@
             this.dataGridView.RowHeadersWidth = 45;
             this.dataGridView.Size = new System.Drawing.Size(807, 398);
             this.dataGridView.TabIndex = 2;
-            // 
-            // toolStripButtonAdd
-            // 
-            this.toolStripButtonAdd.Image = global::Bai05.Properties.Resources.AddUser_16x;
-            this.toolStripButtonAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonAdd.Name = "toolStripButtonAdd";
-            this.toolStripButtonAdd.Size = new System.Drawing.Size(88, 24);
-            this.toolStripButtonAdd.Text = "Thêm mới";
-            this.toolStripButtonAdd.Click += new System.EventHandler(this.toolStripButtonAdd_Click);
-            // 
-            // addToolStripMenuItem
-            // 
-            this.addToolStripMenuItem.Image = global::Bai05.Properties.Resources.AddUser_16x;
-            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.addToolStripMenuItem.Text = "Thêm mới";
-            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // ColumnOrder
             // 

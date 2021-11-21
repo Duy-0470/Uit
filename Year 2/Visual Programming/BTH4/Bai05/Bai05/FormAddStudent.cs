@@ -43,6 +43,19 @@ namespace Bai05
             if (valid)
             {
                 FormMain.students.Add(new Student(textBoxID.Text, textBoxName.Text, comboBoxDepartment.SelectedItem.ToString(), value));
+                
+                if (FormMain.dgv.Rows.Count > 1)
+                {
+                    foreach (DataGridViewRow row in FormMain.dgv.Rows)
+                    {
+                        if (row.Cells[1].Value.ToString().Contains(textBoxID.Text))
+                        {
+                            MessageBox.Show("Mã số sinh viên đã tồn tại", "Lỗi");
+                            return;
+                        }
+                    }
+                }
+
                 FormMain.dgv.Rows.Clear();
                 for (int i = 0; i < FormMain.students.Count; i++)
                 {
