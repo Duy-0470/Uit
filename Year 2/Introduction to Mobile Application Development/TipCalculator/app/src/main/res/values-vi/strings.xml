@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tính tiền thưởng</string>
+    <string name="enter_amount">Nhập số lượng</string>
+    <string name="tip_percent">15%</string>
+    <string name="tip">Thưởng</string>
+    <string name="total">Tổng tiền</string>
+</resources>
